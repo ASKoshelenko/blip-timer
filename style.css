@@ -5,6 +5,7 @@
   --muted: #5d5d62;
   --line: rgba(0, 0, 0, 0.08);
   --accent: #00805e;
+  --on-accent: #ffffff;
   --prepare: #ffe7a8;
   --work: #009b72;
   --rest: #e5484d;
@@ -19,6 +20,7 @@
     --muted: #a1a1a6;
     --line: rgba(255, 255, 255, 0.1);
     --accent: #2fd29f;
+    --on-accent: #00281c;
   }
 }
 
@@ -114,6 +116,17 @@ li { margin: 4px 0; }
 .updated { color: var(--muted); font-size: 15px; }
 header .updated { margin: 6px 0 0; }
 header a { text-decoration: none; }
+
+.get { margin: 28px 0 0; }
+header a.store {
+  display: inline-block;
+  padding: 12px 24px;
+  border-radius: 999px;
+  background: var(--accent);
+  color: var(--on-accent);
+  font-weight: 600;
+}
+header a.store:hover { filter: brightness(1.08); }
 
 footer {
   max-width: 680px;
